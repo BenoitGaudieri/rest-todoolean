@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Todo</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+        integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Overlock+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Todo</h1>
+        </header>
+
+        <main>
+            <input type="text" name="" id="new-todo-input" placeholder="Insert new todo">
+            <button id="new-todo-btn">Insert</button>
+        </main>
+
+        <ul class="todos">
+
+        </ul>
+
+    </div>
+
+    <!-- Template Handlebars -->
+    <script id="todo-template" type="text/x-handlebars-template">
+        <li class="todo">
+            {{todo}}
+            <span class="remove" data-id="{{id}}">X</span>
+        </li>
+    
+    </script>
+
+
+
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
